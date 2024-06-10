@@ -63,13 +63,10 @@ cmp.setup({
 -- rust-analyzer
 local rt = require('rust-tools')
 
--- lspconfig.rust_analyzer.setup({
--- })
-
 require("rust-tools").setup({
 		tools = {
 			autoSetHints = false,
-			hover_with_actions = true,
+			hover_with_actions = false,
 			hover_actions = { border = false },
 			cache = true,
 		},

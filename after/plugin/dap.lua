@@ -42,6 +42,7 @@ else -- if not on windows, must be on linux
         id = 'cppdbg',
         type = 'executable',
         command = '/home/eidhne/cpptools/extension/debugAdapters/bin/OpenDebugAD7',
+		miDebuggerPath = '/usr/bin/gdb'
     }
 end
 
