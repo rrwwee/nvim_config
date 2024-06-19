@@ -29,7 +29,6 @@ keymap('v', '<Right>', '<Nop>', default_opts )
 keymap("i", "jk", "<ESC>", default_opts)
 keymap("t", "jk", "<C-\\><C-n>", default_opts)
 
-
 -- mapping shift-tab to <<
 keymap('i', '<S-Tab>', '<C-d>', default_opts )
 
@@ -39,3 +38,6 @@ keymap("v", ">", ">gv", default_opts)
 
 -- cancel search highlighting with ESC
 keymap("n", "<ESC>", ":nohlsearch<Bar>:echo<CR>", default_opts)
+
+-- mapping "open term bottom right"
+keymap("n", "<leader>te", ":bo term<CR>:resize 30<CR>", default_opts)

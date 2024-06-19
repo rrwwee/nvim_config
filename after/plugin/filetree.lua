@@ -12,4 +12,4 @@ require('nvim-tree').setup {
 
 
 local tree_api = require('nvim-tree.api')
-vim.keymap.set('n', '<Leader>t', tree_api.tree.toggle)
+vim.keymap.set('n', '<Leader>tr', tree_api.tree.toggle)

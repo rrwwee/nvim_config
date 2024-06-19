@@ -6,3 +6,4 @@ require("redraincatching.remap")
 require("redraincatching.lazy")
 require("redraincatching.options")
 require("redraincatching.colorscheme")
+
