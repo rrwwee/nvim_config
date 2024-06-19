@@ -7,7 +7,7 @@ vim.opt.autoindent = true
 vim.opt.smartindent = true
 
 -- use system clipboard
-vim.opt.clipboard = 'unnamedplus'
+vim.opt.clipboard = 'unnamedplus';
 
 -- enable smart case
 vim.opt.ignorecase = true
@@ -18,6 +18,10 @@ vim.opt.infercase = true
 
 -- 24-bit rgb colours
 vim.opt.termguicolors = true
+
+-- expand tabs to space
+-- (i may dislike it but work wants it, so)
+vim.opt.expandtab = true
 
 -- spacing
 vim.opt.wrap = true
