@@ -20,9 +20,9 @@ require('lazy').setup({
 	-- filetree
 	{ 'nvim-tree/nvim-tree.lua' },
 	-- autopair brackets
-	{'windwp/nvim-autopairs'},
+	{ 'windwp/nvim-autopairs' },
 	-- commenting
-	{'numToStr/Comment.nvim'},
+	{ 'numToStr/Comment.nvim' },
 	-- debug adapter
     { 'mfussenegger/nvim-dap' },
     -- debug adapter UI
@@ -43,12 +43,12 @@ require('lazy').setup({
 	},
 	{ 'simrat39/rust-tools.nvim' },
 	-- dashboard
-	{ 'nvimdev/dashboard-nvim',
-	  event = 'VimEnter',
-	  config = function()
-		require('dashboard').setup {
-			packages = { enable = true }
-		}
-	  end,
+	{ 
+        'nvimdev/dashboard-nvim',
+        event = 'VimEnter',
 	},
+    -- feline statusline
+    { 'freddiehaddad/feline.nvim' },
+    -- which-key
+    { 'folke/which-key.nvim' }
 })
