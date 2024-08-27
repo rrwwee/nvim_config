@@ -16,7 +16,7 @@ require('lazy').setup({
 	-- devicons
 	{ 'nvim-tree/nvim-web-devicons' },
 	-- color scheme
-	{ 'rebelot/kanagawa.nvim' },
+	{ 'edeneast/nightfox.nvim' },
 	-- filetree
 	{ 'nvim-tree/nvim-tree.lua' },
 	-- autopair brackets

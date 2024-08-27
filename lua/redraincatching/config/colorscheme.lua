@@ -1,6 +1,5 @@
-require('kanagawa').setup({
-    dimInactive = true,
+require('nightfox').setup({
 })
 
 
-vim.cmd("colorscheme kanagawa-wave")
+vim.cmd("colorscheme terafox")
