@@ -6,6 +6,7 @@ vim.keymap.set('n', '<leader>fg', telescope.live_grep, {desc = "live grep"})
 vim.keymap.set('n', '<leader>fp', telescope.git_files, {desc = "git files"})
 vim.keymap.set('n', '<leader>fw', telescope.grep_string, {desc = "grep string"})
 vim.keymap.set('n', '<leader>fb', telescope.buffers, {desc = "find in buffers"})
+vim.keymap.set('n', '<leader>fr', telescope.oldfiles, {desc = "recent files"})
 
 vim.keymap.set('n', '<leader>flr', telescope.lsp_references, {desc = "find references"})
 vim.keymap.set('n', '<leader>fli', telescope.lsp_implementations, {desc = "find implementations"})
