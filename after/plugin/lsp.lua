@@ -99,15 +99,6 @@ local sign = function(opts)
   })
 end
 
-lspconfig.tsserver.setup {
-	sources = {
-		{ name = 'path' },
-		{ name = 'nvim_lsp' },
-		{ name = 'buffer', keyword_length = 3 },
-		{ name = 'luasnip', keyword_length = 3 },
-	}
-}
-
 sign({name = 'DiagnosticSignError', text = 'X'})
 sign({name = 'DiagnosticSignWarn', text = ''})
 sign({name = 'DiagnosticSignHint', text = ''})
