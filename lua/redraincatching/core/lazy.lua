@@ -50,5 +50,7 @@ require('lazy').setup({
     -- feline statusline
     { 'freddiehaddad/feline.nvim' },
     -- which-key
-    { 'folke/which-key.nvim' }
+    { 'folke/which-key.nvim' },
+    -- mason
+    { 'williamboman/mason.nvim' }
 })

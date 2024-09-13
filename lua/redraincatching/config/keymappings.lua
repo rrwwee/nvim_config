@@ -41,3 +41,12 @@ keymap("n", "<ESC>", ":nohlsearch<Bar>:echo<CR>")
 
 -- mapping "open term bottom right"
 keymap("n", "<leader>te", ":bo term<CR>:resize 30<CR>", {desc = "open terminal"})
+
+-- tab keymappings
+keymap("n", "<leader>jn", ":tabnew", {desc = "open new tab"})
+keymap("n", "<leader>jc", ":tab split", {desc = "open current buffer in new tab"})
+keymap("n", "<leader>jq", ":tabclose", {desc = "close the current tab"})
+keymap("n", "<leader>jo", ":tabonly", {desc = "close all other tabs"})
+
+keymap("n", "<leader>jh", ":-tabnext", {desc = "move to previous tab"})
+keymap("n", "<leader>jl", ":+tabnext", {desc = "move to next tab"})

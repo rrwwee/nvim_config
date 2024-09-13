@@ -43,3 +43,6 @@ vim.api.nvim_exec([[
         autocmd FileType * setlocal formatoptions-=cro
     augroup END
 ]], false)
+
+-- set tab page max to 10 (same as sway workspaces)
+vim.opt.tabpagemax = 10
