@@ -52,5 +52,10 @@ require('lazy').setup({
     -- which-key
     { 'folke/which-key.nvim' },
     -- mason
-    { 'williamboman/mason.nvim' }
+    { 'williamboman/mason.nvim' },
+    -- riscv highlighting
+    {
+        "henry-hsieh/riscv-asm-vim",
+        ft = { "riscv_asm" }
+    }
 })
