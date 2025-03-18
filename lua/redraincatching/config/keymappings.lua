@@ -40,7 +40,7 @@ keymap("v", ">", ">gv")
 keymap("n", "<ESC>", ":nohlsearch<Bar>:echo<CR>")
 
 -- mapping "open term bottom right"
-keymap("n", "<leader>te", ":bo term<CR>:resize 30<CR>", {desc = "open terminal"})
+keymap("n", "<leader>te", ":bo term<CR>:resize 20<CR>", {desc = "open terminal"})
 
 -- tab keymappings
 keymap("n", "<leader>jn", ":tabnew", {desc = "open new tab"})
@@ -50,3 +50,13 @@ keymap("n", "<leader>jo", ":tabonly", {desc = "close all other tabs"})
 
 keymap("n", "<leader>jh", ":-tabnext", {desc = "move to previous tab"})
 keymap("n", "<leader>jl", ":+tabnext", {desc = "move to next tab"})
+
+-- move to hex view & enable syntax highlighting
+keymap("n", "<leader>hx", ":%!xxd<CR>:set ft=xxd<CR>", {desc = "view as hex"})
+
+
+---------------------
+-- PLUGIN KEYBINDS --
+---------------------
+keymap("n", "<leader>rg", ":TodoTelescope<CR>", {desc = "search for TODO and other comments"})
+keymap("n", "<leader>rt", ":TodoTelescope keywords=TODO<CR>", {desc = "search for TODO only"})

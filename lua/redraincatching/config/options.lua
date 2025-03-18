@@ -13,7 +13,7 @@ vim.opt.clipboard = 'unnamedplus';
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
--- enable case infering
+-- enable case inferring
 vim.opt.infercase = true
 
 -- 24-bit rgb colours

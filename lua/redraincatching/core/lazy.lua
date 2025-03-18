@@ -41,14 +41,22 @@ require('lazy').setup({
 		'L3MON4D3/luasnip',
 		version = 'v2.*'
 	},
-	{ 'simrat39/rust-tools.nvim' },
+    -- rust analyzer configuration
+    {
+        'mrcjkb/rustaceanvim',
+        version = '^5',
+        lazy = false,
+        diagnostic = {
+            refreshSupport = false
+        }
+    },
 	-- dashboard
 	{ 
         'nvimdev/dashboard-nvim',
         event = 'VimEnter',
 	},
-    -- feline statusline
-    { 'freddiehaddad/feline.nvim' },
+    -- mini statusline
+    { 'echasnovski/mini.nvim', version = false },
     -- which-key
     { 'folke/which-key.nvim' },
     -- mason
@@ -57,5 +65,29 @@ require('lazy').setup({
     {
         "henry-hsieh/riscv-asm-vim",
         ft = { "riscv_asm" }
+    },
+    -- vimtex
+    {
+        "lervag/vimtex",
+        lazy = false,
+        config = function()
+            vim.g.vimtex_view_method='sioyek'
+        end
+    },
+    -- todo comments
+    {
+        "folke/todo-comments.nvim",
+        dependencies = { "nvim-lua/plenary.nvim" },
+        opts = {
+            keywords = {
+                FIX = { icon = " ", color = "error", alt = { "FIXME", "BUG", "FIXIT", "ISSUE" } },
+                TODO = { icon = " ", color = "info" },
+                HACK = { icon = " ", color = "warning" },
+                WARN = { icon = " ", color = "warning", alt = { "WARNING", "XXX" } },
+                PERF = { icon = " ", alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE" } },
+                NOTE = { icon = " ", color = "hint", alt = { "INFO", "MAYBE" } },
+                TEST = { icon = "⏲ ", color = "test", alt = { "TESTING", "PASSED", "FAILED" } },
+              },
+        }
     }
 })

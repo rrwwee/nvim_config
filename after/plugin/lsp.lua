@@ -1,4 +1,5 @@
 local lspconfig = require("lspconfig")
+local luasnip = require("luasnip")
 lspconfig.clangd.setup{
 	cmd = {
 			"clangd",
@@ -58,37 +59,6 @@ cmp.setup({
 			end
 		}
 })
-
-
--- rust-analyzer
-local rt = require('rust-tools')
-
-require("rust-tools").setup({
-		tools = {
-			autoSetHints = false,
-			hover_with_actions = false,
-			hover_actions = { border = false },
-			cache = true,
-		},
-		server = {
-			on_attach = on_attach,
-			capabilities = capabilities,
-
-			settings = {
-				["rust-analyzer"] = {
-					diagnostics = {
-						experimental = true,
-					},
-				},
-			},
-			on_attach = function(_, bufnr)
-				-- Hover actions
-				vim.keymap.set("n", "<leader>h", rt.hover_actions.hover_actions, { buffer = bufnr }, {desc = "hover action"})
-				-- Code action groups
-				vim.keymap.set("n", "<leader>a", rt.code_action_group.code_action_group, { buffer = bufnr }, {desc = "code action groups"})
-			end,
-		},
-	})
 
 local sign = function(opts)
   vim.fn.sign_define(opts.name, {
