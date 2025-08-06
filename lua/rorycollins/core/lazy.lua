@@ -16,7 +16,15 @@ require('lazy').setup({
 	-- devicons
 	{ 'nvim-tree/nvim-web-devicons' },
 	-- color scheme
-	{ 'edeneast/nightfox.nvim' },
+	{
+		'rose-pine/neovim',
+		name = 'rose-pine',
+		config = function()
+			require('rose-pine').setup({
+				variant = 'moon', -- 'main', 'moon' or 'dawn'
+			})
+		end
+	},
 	-- filetree
 	{ 'nvim-tree/nvim-tree.lua' },
 	-- autopair brackets
