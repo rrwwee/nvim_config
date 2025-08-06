@@ -1,4 +1,4 @@
-local keymap = require("redraincatching.core.functions.keymap").keymap
+local keymap = require("rorycollins.core.functions.keymap").keymap
 -- TODO: make this global, maybe
 
 -- map leader to ,

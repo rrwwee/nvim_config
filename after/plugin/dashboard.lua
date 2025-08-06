@@ -1,5 +1,5 @@
 local dashboard = require('dashboard')    
-local icons = require("redraincatching.core.icons")
+local icons = require("rorycollins.core.icons")
 local telescope = require('telescope.builtin')
 
 vim.keymap.set('n', '<leader>aa', '<cmd>Dashboard<cr>', {desc = "dashboard display"})
@@ -73,7 +73,7 @@ dashboard.setup({
         },
 
         footer = function()
-            local ui = require("redraincatching.core.icons").ui
+            local ui = require("rorycollins.core.icons").ui
             local stats = require("lazy").stats()
             local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
             return {
